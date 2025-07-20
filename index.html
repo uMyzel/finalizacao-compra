@@ -28,7 +28,7 @@
     <section id="carrinho">
         <div class="container flex flex-row" >
             <div id="area-um-carrinho">
-                <div class="produto flex flex-row"  >
+                <div id="produto1" class="produto flex flex-row" onclick="excluirProduto()">
                     <div>
                         <img src="assets/icons/galaxy-s25.jpg" alt="">
                     </div>
@@ -37,14 +37,14 @@
                     <span>X</span>
                 </div>
 
-                 <div class="produto flex flex-row">
+                 <div class="produto flex flex-row" id="produto2" onclick="excluirProduto2()">
                     <div><img src="assets/icons/iphone.webp" alt=""></div>
                     <p>Apple Iphone 16</p>
                     <strong>R$ 5.000,00</strong>
                     <span>X</span>
                 </div>
 
-                 <div class="produto flex flex-row">
+                 <div class="produto flex flex-row" id="produto3" onclick="excluirProduto3()">
                     <div><img src="assets/icons/king-smartphone.jpg" alt=""></div>
                     <p>Samsung Galaxy Pocket</p>
                     <strong>R$ 15.000,00</strong>
@@ -53,8 +53,14 @@
             </div>
             <div id="area-dois-carrinho">
                 <h2>Valores</h2>
-
-                teste
+                <div class="box-valores">
+                    <strong>Produtos </strong>
+                    <strong id="valor-produtos"></strong>
+                </div>
+                <div id="total">
+                    <strong>Valor Total (R$): </strong>
+                    <strong id="total-produto"></strong>
+                </div>
             </div>
 
             
